@@ -12,4 +12,8 @@ class Isbn extends Model
     protected $primaryKey = 'uuid';
 
     protected $fillable = ['uuid'];
+
+    protected $casts = [
+        'uuid' => 'string'
+      ];
 }
