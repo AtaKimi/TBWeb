@@ -18,7 +18,7 @@ class BookFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => Isbn::all()[0]->uuid,
+            'uuid' => Isbn::all()->random(1)[0]->uuid,
             'title' => fake()->sentence(),
             'writer' => fake()->name(),
             'summary' => fake()->paragraph(),
